@@ -46,7 +46,7 @@ echo "2. Pilih Domain Anda Sendiri"
 read -rp "Input 1 or 2: " dns
 if [ "$dns" -eq 1 ]; then
     # Download cf script and convert line endings
-    wget https://raw.githubusercontent.com/Fitunnel/AutoScriptLite/main/InstallerOthers/cf
+    wget https://raw.githubusercontent.com/Fitunnel/AutoScriptLite/main/InstallerOther/cf
     dos2unix cf
     bash cf
 elif [ "$dns" -eq 2 ]; then
