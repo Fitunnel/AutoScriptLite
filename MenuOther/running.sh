@@ -151,8 +151,8 @@ kernelku=$(uname -r)
 
 # DNS PATCH
 #tipeos2=$(uname -m)
-Name=$"NETWORK TWEAKER"
-Exp=$"NONE"
+Name="Fitunnel-ID SSH ONLY (REMAKE v1.0)"
+Exp="LifeTime"
 # GETTING DOMAIN NAME
 Domen="$(cat /etc/xray/domain)"
 echo -e ""
