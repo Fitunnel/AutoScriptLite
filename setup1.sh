@@ -67,6 +67,16 @@ wget -q https://raw.githubusercontent.com/Fitunnel/AutoScriptLite/main/Installer
 dos2unix ssh-vpn.sh
 bash ssh-vpn.sh
 
+# Install Xray (Opsional)
+wget -q https://raw.githubusercontent.com/Fitunnel/AutoScriptLite/main/InstallerSSH/ins-xray.sh
+dos2unix ins-xray.sh
+bash ins-xray.sh
+
+# Install SSH websocket
+wget -q https://raw.githubusercontent.com/Fitunnel/AutoScriptLite/main/InstallerSSH/insshws.sh
+dos2unix insshws.sh
+bash insshws.sh
+
 # Setup environment for auto-reboot
 ln -fs /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
 sysctl -w net.ipv6.conf.all.disable_ipv6=1
