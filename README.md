@@ -28,7 +28,7 @@ wget -q https://raw.githubusercontent.com/Fitunnel/AutoScriptLite/main/setup.sh 
 <img src="https://img.shields.io/badge/-Services%20%26%20Port-brightgreen"> 
   
 ```
-» Open SSH                   : 443, 80 , 22
+» Open SSH                   : 80, 22
 » Dropbear                   : 443, 109, 143l
 » Dropbear Websocket         : 443, 109
 » SSH Websocket SSL          : 443
