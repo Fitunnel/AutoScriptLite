@@ -29,7 +29,7 @@ wget -q https://raw.githubusercontent.com/Fitunnel/AutoScriptLite/main/setup.sh 
   
 ```
 » Open SSH                   : 80, 22
-» Dropbear                   : 443, 109, 143l
+» Dropbear                   : 443, 109, 143
 » Dropbear Websocket         : 443, 109
 » SSH Websocket SSL          : 443
 » SSH Websocket              : 80
