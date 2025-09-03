@@ -48,3 +48,35 @@ wget -q https://raw.githubusercontent.com/Fitunnel/AutoScriptLite/main/setup.sh 
 » BadVPN 3                   : 7300
 ```
 </details>
+
+<b><details><summary>Fix Auto Expired Account</summary></b> 
+ <p align="center"> 
+  
+```
+Cara Fix Auto Expired SSH :
+1. Cari Di Folder Root/etc/cron.d xp_all
+2. Edit ke :
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+15 0 * * * root /usr/local/sbin/xp
+3. Terus Di Folder Root/etc/hosts edit ke :
+127.0.0.1 localhost
+127.0.0.1 Dev-Alfi (Dev-Alfi ganti Hostname Kalian)
+
+# The following lines are desirable for IPv6 capable hosts
+::1     localhost ip6-localhost ip6-loopback
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+4. Sesudah itu kita cek dengan menggunakan printah :
+sudo grep "unable to resolve host" /var/log/syslog
+5. Gunakan Perintah 'sudo crontab -e'
+6. lalu tambahkan teks di bawah ini :
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+15 0 * * * root /usr/local/sbin/xp
+7. Tekan Ctrl + X kemudian Y dan enter
+8.kita cek gunakan printah ini :
+sudo grep CRON /var/log/syslog (Memeriksa Log)
+sudo systemctl status cron (Cek Status RUNNING)
+```
+</details>
